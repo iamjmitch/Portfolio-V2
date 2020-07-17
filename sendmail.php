@@ -4,11 +4,12 @@ ini_set('display_errors', 1);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$api ="#";
+
 
 require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
 require './PHPMailer/src/SMTP.php';
+require './auth.php';
 
 if (!isset($_POST['submit'])){
     header("Location: ./index.php");
