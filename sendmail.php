@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 		// Build POST request:
 		$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
 		$recaptcha_response = $_POST['recaptcha_response'];
-		$recaptcha = file_get_contents($recaptc1ha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+		$recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
 		$recaptcha = json_decode($recaptcha);
 			if ($recaptcha->score <= 0.4) {
-			header("Location: ./index.php?error=formresubmit");
+			header("Location: ./index.php?error#contacta");
 			exit;
 		} 
 	
@@ -34,22 +34,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 
-
-if(empty($message)){
-    header("Location: ./index.php?message=emptymessage#contact");
-    exit;
-}
-
-if(empty($name)){
-    header("Location: ./index.php?message=emptyname#contact");
-    exit;
-}
-
-if(empty($email) || empty($phone)){
-    header("Location: ./index.php?message=missingcontact#contact");
-    exit;
-}
-    $mes = '
+$mes = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
@@ -394,4 +379,4 @@ if(empty($email) || empty($phone)){
 
     $mail->ClearAddresses();
     $mail->ClearAttachments();
-    header("Location: ./index.php?message=Sucess#contact");
+    header("Location: ./index.php?success#contacta");

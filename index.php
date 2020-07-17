@@ -381,7 +381,7 @@
                   <p>My original portfolio</p>
                   <div class="slideButtons flex">
                      <div class="gotoButton">
-                        <a href="https://version1.iamjmitch.com" target="_blank">
+                        <a href="https://portfolio-v1.iamjmitch.com" target="_blank">
                            <p>Website</p>
                         </a>
                      </div>
@@ -572,19 +572,53 @@
 	<div id="contactFormContainer" >
 		<div class="formHeader tac blue flex aic jc-c">
 			Get in Touch with James
-			</div>
+         </div>
+         
 			<div class="formContent white">
-				<form action="./sendmail.php" method="post">
+         <?php if(isset($_GET['error'])){echo '<div id="messageError" >
+         <p>A Error Occured, Please Try Again</p>
+         <div class="animation-ctn">
+         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12.5" cy="12.5" r="12" fill="white" stroke="#FF0000"/>
+<circle cx="12.5" cy="12.5" r="11.5" fill="#FF0000"/>
+<circle cx="7" cy="8" r="2" fill="black"/>
+<circle cx="18" cy="8" r="2" fill="black"/>
+<path d="M7.07235 19C6.7434 18 7.3684 16 12.5 16C17.6316 16 18.2566 18 17.9277 19" stroke="black"/>
+</svg>
+
+        </div>
+
+
+         </div>';}?>
+         <?php 
+         if(isset($_GET['success'])){echo '<div id="messageSuccess" >
+         <p>Thankyou,</p>
+         <p>Message Sent Successfully</p>
+         <div class="animation-ctn">
+  	      <div class="icon icon--order-success svg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="154px" height="154px">  
+            <g fill="none" stroke="#22AE73" stroke-width="2"> 
+              <circle cx="77" cy="77" r="72" style="stroke-dasharray:480px, 480px; stroke-dashoffset: 960px;"></circle>
+              <circle id="colored" fill="#22AE73" cx="77" cy="77" r="72" style="stroke-dasharray:480px, 480px; stroke-dashoffset: 960px;"></circle>
+              <polyline class="st0" stroke="#fff" stroke-width="10" points="43.5,77.8 63.7,97.9 112.2,49.4 " style="stroke-dasharray:100px, 100px; stroke-dashoffset: 200px;"/>   
+            </g> 
+          </svg>
+        </div>
+</div>
+
+         </div>';}?>
+            <form action="./sendmail.php" method="post">
+           
 					<div class="row2 flex jc-sa">
-					<input type="text" name= "name" id="name" placeholder="Name" class="grey full-width" required>
+					<input type="text" name= "name" id="name" placeholder="Name (required)" class="grey full-width" required>
 					<input type="text" name= "phone" id="phone" placeholder="Phone Number" class="grey full-width">
 					</div>
 					<div class="row2">
-					<input type="email" name= "email" id="email" placeholder="Email" class="grey full-width" required>
-					<input type="text" name= "subject" id="subject" placeholder="Subject" class="grey full-width">
+					<input type="email" name= "email" id="email" placeholder="Email (required)" class="grey full-width" required>
+					<input type="text" name= "subject" id="subject" placeholder="Subject (required)" class="grey full-width" required>
 				</div>
 				<div class="row2">
-					<textarea name= "message" id="message" placeholder="Your Message" class="grey" required></textarea>
+					<textarea name= "message" id="message" placeholder="Your Message (required)" class="grey" required></textarea>
 				</div>
 
 				<div class="row3">
