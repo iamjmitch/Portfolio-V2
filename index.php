@@ -591,6 +591,7 @@
 					<button type="submit" name="submit" class="blue">Submit</button>
 					<button type="reset" class="blue">Reset</button>
 				</div>
+            <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 				</form>
 
 			</div>

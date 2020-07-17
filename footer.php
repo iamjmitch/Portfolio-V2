@@ -11,4 +11,12 @@
 </footer>
 </body>
 <script src="./js/iamjmitch.js"></script>
+<script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
 </html>
