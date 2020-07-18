@@ -21,10 +21,37 @@ h2 {
   font-size: 25px;
   font-weight: bolder;
   line-height: 40px;
+  padding-left: 10px;
 }
 
 h4 {
   padding-bottom: 10px;
+  overflow: visible !important;
+}
+
+.heading {
+  transform: 0.2s;
+}
+.heading:after {
+  content: ' ';
+  float: right;
+  margin-right: 30px;
+  font-size: 20px;
+  width: 5px;
+  height: 5px;
+  border: solid #fc2602;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-top: 10px;
+  transform: 0.2s;
+}
+.active:after {
+  transform: rotate(-135deg) !important;
+  -webkit-transform: rotate(-135deg) !important;
+  margin-top: 15px !important;
 }
 
 .extraPaddingBottom {
@@ -40,12 +67,12 @@ h4 {
 }
 
 #resumeLeft {
-  width: 30%;
+  width: 80%;
   margin-right: 10px;
 }
 
 #resumeRight {
-  width: 70%;
+  width: 20%;
 }
 
 #workXP,
@@ -56,7 +83,7 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 10px 0 10px 10px;
+  padding: 30px 0 0 10px;
   margin-bottom: 10px;
 }
 
@@ -74,7 +101,14 @@ h4 {
 
 .duration {
   color: #fc2602;
-  padding-bottom: 10px;
+}
+.boxText {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  padding-right: 40px;
+  padding-left: 10px;
 }
 
 .boxText p {
@@ -87,7 +121,62 @@ h4 {
 } */
 
 .contentBox {
-  margin-bottom: 25px;
-  border-bottom: 2px solid #80808038;
-  padding-right: 45px;
+  padding: 10px 0;
+  border-bottom: 4px solid #e5e5e5;
+}
+
+.contentBox:last-of-type {
+  border-bottom: none;
+}
+
+.boxHeading {
+  position: relative;
+}
+
+.boxHeading:hover {
+  cursor: pointer;
+}
+
+.boxHeading {
+  padding: 10px;
+}
+
+div#resumeRight {
+  background: #fc2602;
+  max-height: 99vh;
+  position: sticky;
+  top: 0;
+}
+
+div#interestIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px 20px 10px;
+}
+
+#interestIcons svg {
+  max-width: 52px;
+  max-height: 50px;
+}
+
+/* Foooter */
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+}
+
+#footer a {
+  padding: 0 20px;
+  color: #fc2602;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+#footer a:hover {
+  color: #000000;
 }
