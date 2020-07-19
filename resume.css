@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow: auto;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 html {
@@ -33,13 +33,13 @@ h4 {
   transform: 0.2s;
 }
 .heading:after {
-  content: ' ';
+  content: " ";
   float: right;
   margin-right: 30px;
   font-size: 20px;
   width: 5px;
   height: 5px;
-  border: solid #fc2602;
+  border: solid #fc4702;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -62,17 +62,15 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  display: block;
 }
 
 #resumeLeft {
-  width: 80%;
+  width: 70%;
   margin-right: 10px;
-}
-
-#resumeRight {
-  width: 20%;
+  float: left;
 }
 
 #workXP,
@@ -100,7 +98,7 @@ h4 {
 }
 
 .duration {
-  color: #fc2602;
+  color: #fc4702;
 }
 .boxText {
   max-height: 0;
@@ -116,9 +114,9 @@ h4 {
   font-size: 16px;
 }
 
-/* .boxText p::before {
-  content: ' ';
-} */
+.boxText p::before {
+  content: "• ";
+}
 
 .contentBox {
   padding: 10px 0;
@@ -139,13 +137,6 @@ h4 {
 
 .boxHeading {
   padding: 10px;
-}
-
-div#resumeRight {
-  background: #fc2602;
-  max-height: 99vh;
-  position: sticky;
-  top: 0;
 }
 
 div#interestIcons {
@@ -171,7 +162,7 @@ div#interestIcons {
 
 #footer a {
   padding: 0 20px;
-  color: #fc2602;
+  color: #fc4702;
   text-decoration: none;
   font-size: 16px;
   font-weight: bolder;
@@ -179,4 +170,61 @@ div#interestIcons {
 
 #footer a:hover {
   color: #000000;
+}
+
+/* right sidebar  */
+#resumeRight {
+  background: #fc4702;
+  /* max-height: 99vh; */
+  min-width: 350px;
+  max-width: 350px;
+  float: right;
+}
+
+#logo {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.sidebarBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.sidebarBoxIcon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+}
+.sidebarBoxIcon svg {
+  height: 30px;
+}
+.sidebarBoxText {
+  width: 80%;
+  padding: 35px 0 30px 0;
+  border-bottom: 2px solid #e23400;
+}
+
+.sidebarBoxText:nth-last-of-type(5) {
+  border: none;
+}
+
+.sidebarBoxText p {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.sidebarBoxText p b {
+  color: #ffffff9e;
+  font-size: 10px;
 }

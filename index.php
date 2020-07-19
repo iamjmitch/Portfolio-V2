@@ -92,7 +92,7 @@
       </div>
    	         <p>Hi, My name is James and i’m a junior Web Developer From Brisbane, Australia. Thanks for visiting my website!</p>
          <p>While i’m relatively new to the commercial developer scene, I have been making and creating my own personal projects for the past few years. Previously a retail manager, I decided to focus on my passion for computers and the creative industries and turn it into a career I love! I have a Cert IV in Web Development from TAFE QLD and a Diploma in Website Development from TAFE NSW. I’ve done a few projects for clients which you can see in my portfolio.</p>
-         <p>If you have any questions or design inquiries, please feel free to get in contact with me via the contact page, I’d love to hear from you!</p>
+         <p>If you have any questions or design enquiries, please feel free to get in contact with me via the contact page, I’d love to hear from you!</p>
          <p>James</p>
       </div>
    </div>
