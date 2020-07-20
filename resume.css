@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif !important;
 }
 
+p{
+  font-size: 14px;
+}
+
 html {
   background-color: #e5e5e5;
   padding: 10px;
@@ -111,7 +115,7 @@ h4 {
 
 .boxText p {
   padding-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .boxText p::before {
@@ -164,7 +168,7 @@ div#interestIcons {
   padding: 0 20px;
   color: #fc4702;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bolder;
 }
 
