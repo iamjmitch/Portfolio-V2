@@ -44,7 +44,7 @@
         <li id="linkabout" class="links"><a href="#AboutMe">About Me</a></li>
         <li id="linkportfolio" class="links"><a href="#portfolio">Portfolio</a></li>
         <li id="linkcontact" class="links"><a href="#contacta">Contact Me</a></li>
-        <li ><a href="#">Resume</a></li>
+        <li ><a href="./resume.html" target='_blank'>Resume</a></li>
         <li ><a href="https://github.com/iamjmitch" target="_blank">Github</a></li>
       </ul>
     </div><!--/.nav-collapse -->
