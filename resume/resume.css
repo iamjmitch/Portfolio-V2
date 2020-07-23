@@ -23,11 +23,11 @@ svg {
 }
 
 h2 {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   font-size: 25px;
   font-weight: bolder;
   line-height: 40px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 h4 {
@@ -40,14 +40,14 @@ h4 {
   -ms-transform: 0.2s;
   transform: 0.2s;
 }
-.heading:after {
+/* .heading:after {
   content: ' ';
   float: right;
   margin-right: 35px;
   font-size: 20px;
   width: 5px;
   height: 5px;
-  border: solid #b34400;
+  border: solid #ce3100;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -58,13 +58,7 @@ h4 {
   -webkit-transform: 0.2s;
   -ms-transform: 0.2s;
   transform: 0.2s;
-}
-.active:after {
-  -ms-transform: rotate(-135deg) !important;
-  transform: rotate(-135deg) !important;
-  -webkit-transform: rotate(-135deg) !important;
-  margin-top: 15px !important;
-}
+} */
 
 .extraPaddingBottom {
   padding-bottom: 20px !important;
@@ -97,7 +91,7 @@ h4 {
   width: unset;
 }
 
-#workXP,
+/* #workXP,
 #education,
 #interests,
 #footer {
@@ -113,9 +107,9 @@ h4 {
   flex-wrap: nowrap;
   padding: 30px 0 0 10px;
   margin-bottom: 10px;
-}
+} */
 
-.boxLeft {
+/* .boxLeft {
   min-width: 120px;
   margin-left: -10px;
   display: -webkit-box;
@@ -132,15 +126,105 @@ h4 {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 6px;
+} */
+
+/* .boxRight {
+  width: 100%;
+} */
+
+.duration {
+  color: #ce3100;
 }
 
-.boxRight {
+#workXP,
+#education,
+#interests,
+#footer {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.sectionHeadingBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 10px;
+}
+
+.sectionHeadingBox img {
+  width: 33%;
+}
+
+.sectionIcon {
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.sectionHeading {
   width: 100%;
 }
 
-.duration {
-  color: #b34400;
+.sectionBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
+
+/* .sectionBox .sectionBoxContent:last-of-type {
+  border-bottom: none !important;
+} */
+
+.sectionBoxContent {
+  border-bottom: 2px solid #b7b7b7;
+  padding: 15px 0 15px 10px;
+  width: 100%;
+}
+
+.whitespace {
+  min-width: 120px;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.boxHeading {
+  display: flex;
+}
+
+.boxHeading:hover {
+  cursor: pointer;
+}
+
+.arrowBox {
+  overflow: visible;
+  min-width: 15px;
+  align-items: center;
+  display: flex;
+  padding-right: 40px;
+}
+
+.arrowBox img {
+  width: 20px;
+  transition: 0.2s;
+  -ms-transform: rotate(-360deg) !important;
+  transform: rotate(-360deg) !important;
+  -webkit-transform: rotate(-360deg) !important;
+}
+
+.arrowBox.active img {
+  -ms-transform: rotate(-180deg) !important;
+  transform: rotate(-180deg) !important;
+  -webkit-transform: rotate(-180deg) !important;
+}
+
 .boxText {
   max-height: 0;
   overflow: hidden;
@@ -157,6 +241,14 @@ h4 {
   font-size: 14px;
 }
 
+.boxText p:last-of-type {
+  padding-bottom: 0 !important;
+}
+
+.boxText p:first-of-type {
+  padding-top: 10px !important;
+}
+
 .boxText p::before {
   content: '• ';
 }
@@ -171,7 +263,7 @@ h4 {
   border-bottom: none;
 }
 
-.boxHeading {
+/* .boxHeading {
   position: relative;
 }
 
@@ -181,9 +273,10 @@ h4 {
 
 .boxHeading {
   padding: 10px;
-}
+} */
 
 div#interestIcons {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +287,7 @@ div#interestIcons {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 40px 20px 10px;
+  padding: 10px 40px 20px 10px;
 }
 
 #interestIcons svg {
@@ -220,7 +313,7 @@ div#interestIcons {
 
 #footer a {
   padding: 0 20px;
-  color: #b34400;
+  color: #ce3100;
   text-decoration: none;
   font-size: 14px;
   font-weight: bolder;
@@ -232,7 +325,7 @@ div#interestIcons {
 
 /* right sidebar  */
 #resumeRight {
-  background: #b34400;
+  background: #ce3100;
   /* max-height: 99vh; */
   min-width: 350px;
   max-width: 350px;
@@ -316,12 +409,20 @@ div#interestIcons {
   box-shadow: -1px 4px 5px -2px rgba(0, 0, 0, 0.73);
 }
 
+.mobileOn {
+  display: none;
+}
+
 /* media query */
 @media screen and (max-width: 480px) {
+  #footer a {
+    padding: 0 10px;
+  }
+
   p,
   h4,
   .duration {
-    font-size: 13px;
+    font-size: 16px;
   }
   html {
     padding: 0;
@@ -371,11 +472,40 @@ div#interestIcons {
   .boxText p,
   .duration,
   .sidebarBoxText p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 951px) {
+  #footer {
+    padding: 30px 0;
+  }
+
+  .mobileOn {
+    display: block;
+  }
+
+  .sectionIcon {
+    width: 80px;
+  }
+  .sectionHeadingBox img {
+    width: 20px;
+  }
+
+  div#interestIcons {
+    padding: 15px 40px 20px 40px;
+  }
+  .sectionBoxContent {
+    padding-left: 20px;
+  }
+
+  .arrowBox {
+    padding-right: 20px;
+  }
+  .whitespace {
+    display: none;
+  }
+
   h4 {
     font-size: 20px;
   }

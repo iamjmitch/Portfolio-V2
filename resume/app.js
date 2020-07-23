@@ -4,7 +4,7 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener('click', function () {
     var content = this.nextElementSibling;
-    var heading = this.firstChild.nextElementSibling;
+    var heading = this.firstChild.nextElementSibling.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
       heading.classList.remove('active');
