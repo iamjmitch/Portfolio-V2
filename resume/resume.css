@@ -8,7 +8,7 @@
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 html {
@@ -238,7 +238,7 @@ h4 {
 
 .boxText p {
   padding-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .boxText p:last-of-type {
@@ -310,12 +310,11 @@ div#interestIcons {
   justify-content: center;
   padding: 30px;
 }
-
 #footer a {
   padding: 0 20px;
   color: #ce3100;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bolder;
 }
 
@@ -370,7 +369,7 @@ div#interestIcons {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 37px;
+  padding-top: 24px;
 }
 .sidebarBoxIcon svg {
   height: 30px;
@@ -387,15 +386,15 @@ div#interestIcons {
 
 .sidebarBoxText p {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 10px;
 }
 
 .sidebarBoxText p b {
-  color: #ffffff9e;
-  font-size: 10px;
+  color: #ffffffc9;
+  font-size: 14px;
 }
 
 #logo svg {
@@ -415,6 +414,13 @@ div#interestIcons {
 
 /* media query */
 @media screen and (max-width: 480px) {
+  .boxText {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+  h4.heading {
+    padding-right: 10px;
+  }
   #footer a {
     padding: 0 10px;
   }
