@@ -180,7 +180,7 @@ h4 {
 
 .sectionBoxContent {
   border-bottom: 2px solid #b7b7b7;
-  padding: 15px 0 15px 10px;
+  padding: 26px 0 26px 10px;
   width: 100%;
 }
 
@@ -376,11 +376,11 @@ div#interestIcons {
 }
 .sidebarBoxText {
   width: 80%;
-  padding: 24px 0 19px 0;
+  padding: 23px 0 18px 0;
   border-bottom: 2px solid #953c06;
 }
 
-.sidebarBoxText.noBorder {
+.noBorder {
   border: none !important;
 }
 
