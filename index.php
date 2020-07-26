@@ -247,6 +247,7 @@
                <div class="slideText">
                   <h2>Pawesome Pet Services<br></h2>
                   <p>A Commercial Website For A Local Business</p>
+                  <p>Website No Longer Live</p>
                   <div class="slideButtons flex">
                      <div class="gotoButton">
                         <a href="https://pawesomepetservices.iamjmitch.com" target="_blank">
@@ -759,6 +760,7 @@
          </div>
          <div class="modal-text">
             <h5>About the project</h5>
+            <p>Website no longer live</p>
             <p>A commercial website for a local pet services compant. Works completed within the full specifications set by the client. Website uses a mixture of HTML, PHP & Javascript</p>
          </div>
       </div>
