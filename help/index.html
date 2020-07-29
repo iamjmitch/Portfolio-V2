@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iamjmitch.com - Useful Snippets, Links, Web Apps</title>
+    <link rel="stylesheet" href="./prism.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./prism.js"></script>
+    
+  </head>
+  <body>
+    <div id="container">
+      <h1>Useful Snippets, Links & Webapps</h1>
+      <div class="snippet" >
+        <h2>CSS Reset</h2> <button onclick="copyText(this)">Copy To Clipboard</button>
+        <pre><code class="language-css" id="cssreset">      
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: auto;
+        }
+
+      html {
+        scroll-behavior: smooth;
+        }</code>
+  </pre>
+      </div>
+
+      <div class="snippet"">
+        <h2>@media Query Breakdown Points</h2> <button onclick="copyText(this)">Copy To Clipboard</button>
+        <pre><code class="language-css"  id="media">
+          /* mobile */
+          @media (max-width: 480px) { 
+            
+          }         
+          /* tablet */
+          @media (max-width: 980px) { 
+            
+           }         
+           /* laptop */
+          @media (max-width: 1200px) { 
+            
+           }
+           /* desktop */         
+          @media (max-width: 1500px) {
+            
+          }</code>
+      </pre>
+      
+      </div>
+
+      <div id="linkListContainer">
+        <h2>List of Links</h2>
+        <div id="linkList">
+          <p>
+            <a href="https://autoprefixer.github.io/" target="_blank"
+              >Autoprefixer</a
+            >
+            - CSS autoprefixer
+          </p>
+          <p>
+            <a
+              href="https://www.freeformatter.com/html-escape.html"
+              target="_blank"
+              >HTML Escape</a
+            >
+            - Escapes or unescapes an HTML file removing traces of offending
+            characters that could be wrongfully interpreted as markup.
+          </p>
+          <p>
+            <a href="https://svgartista.net" target="_blank">SVG Artista</a> -
+            Animate SVGs
+          </p>
+          <p><a href="https://kraken.io/web-interface" target="_blank">Kraken IO</a> - Image optimizer</p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

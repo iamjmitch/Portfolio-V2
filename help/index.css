@@ -1,0 +1,82 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  padding: 30px 0;
+}
+
+h2 {
+  padding-top: 20px;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 30px;
+  float: left;
+}
+
+#container {
+  width: 1200px;
+  margin: auto;
+}
+
+#linkList {
+  background: #f5f2f0;
+  padding: 16px;
+  margin-top: 8px;
+  padding-left: 105px;
+  padding-top: 41px;
+}
+
+#linkList p {
+  padding: 5px 0;
+}
+
+.snippet,
+#linkListContainer {
+  background: #f5f2f0;
+  border: 2px solid #00adeb38;
+  margin-bottom: 20px;
+}
+
+button {
+  background: transparent;
+  padding: 5px 20px;
+  border: 2px solid #00adeb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+button:hover {
+  border: 2px solid #0579a3;
+  background: #0579a3;
+  cursor: pointer;
+  color: white;
+}
+
+pre,
+#linkList {
+  clear: both;
+}
