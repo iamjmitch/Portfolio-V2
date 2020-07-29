@@ -71,7 +71,7 @@
             <i class="fas fa-file-alt"></i>
          </div>
          <h2>resume</h2>
-         <p>For an online version of my resume, click here</p>
+         <p>For an online version of my resume, click <a href="https://www.iamjmitch.com/resume/" target="_blank"> here</a></p> 
       </div>
    </div>
 </div>
@@ -240,6 +240,32 @@
       <input type="button" id="WebsiteButton"class="portfolioButton"name="websites" onClick="showWebsites()" value="Websites">
       <input type="button" id="designButton"class="portfolioButton"name="graphics" onClick="showDesign()" value = "Design">			
       <div class="content-area-wrapper flex wrap jc-c">
+
+      <div class="portfolio-box">
+            <img class="lazy" data-src="./assests/images/portfolio/andratech-landing.jpg">
+            <div id ="pb1" class="slidebox overlay">
+               <div class="slideText">
+                  <h2>Andratech<br></h2>
+                  <p>A Landing Page For A Local Business</p>
+                  
+                  <div class="slideButtons flex">
+                     <div class="gotoButton">
+                        <a href="https://andratech-landing.iamjmitch.com" target="_blank">
+                           <p>Website</p>
+                        </a>
+                     </div>
+                     <div id="modalAndratechBtn" class="learnmoreButton">
+                        
+                           <p>Learn More</p>
+                       
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
 
       <div class="portfolio-box">
             <img class="lazy" data-src="./assests/images/portfolio/pawesome-small.jpg">
@@ -767,7 +793,6 @@
    </div>
 </div>
 
-
 <!-- Website v2 modal -->
 
 <div id="modalV2" class="modal">
@@ -800,6 +825,45 @@
          <div class="modal-text">
             <h5>About the project</h5>
             <p>Version 2 of my personal portfolio to showcase my work in a way that demonstrates newly learned skills </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+<!-- Andratech modal -->
+
+<div id="modalAndratech" class="modal">
+   <div class="modal-content">
+      <span id="closeBtn" class="closeBtn">&times;</span>
+      <div class="modal-container">
+         <div class="modalHeading">
+            <h3>ANDRATECH.COM.AU</h3>
+         </div>
+         <div class="modalFlexContainer">
+            <div class="modal-image">
+               <img src="./assests/images/modal/andratech-landing.png" alt="">
+            </div>
+            <div class="modal-bullets">
+               <div class="modal-bullets-container">
+                  <ul>
+                     <li>Type: Commercial</li>
+                     <li>Responsive Layout: Yes</li>
+                     <li>Static HTML</li>
+                     
+                  </ul>
+                  <div class="modal-icons">
+                     <i class="fab fa-html5"></i>
+                     <i class="fab fa-css3-alt"></i>
+                     <i class="fab fa-js"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-text">
+            <h5>About the project</h5>
+            <p>Coming soon landing page for andratech.com.au.</p><p> Andratech is a small computer repair company on Brisbane's Northside</p>
          </div>
       </div>
    </div>
